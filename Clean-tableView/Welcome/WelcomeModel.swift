@@ -9,5 +9,5 @@
 import Foundation
 
 internal struct WelcomeModel {
-    var countNumber : Int!
+    var countNumber : Int?
 }

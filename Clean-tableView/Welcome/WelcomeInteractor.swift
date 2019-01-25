@@ -17,7 +17,7 @@ final class WelcomeInteractor {
         didSet { presenter?.modelUpdated(model) }
     }
 
-    var model: WelcomeModel!
+    var model = WelcomeModel()
 
     init(presenter: WelcomePresenterInput?) {
         self.presenter = presenter
@@ -29,5 +29,9 @@ extension WelcomeInteractor: WelcomeInteractorInput {
     func loadContent() {
         let currentCount = UserDefaults.standard.integer(forKey: "launchCount")
         UserDefaults.standard.set(currentCount+1, forKey:"launchCount")
+        model.countNumber = currentCount
+
+        presenter?.modelUpdated(model)
+
     }
 }

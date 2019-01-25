@@ -23,18 +23,13 @@ final class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         interactor = WelcomeInteractor(presenter: WelcomePresenter(viewController: self))
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        interactor?.loadContent()
     }
     
     private func updateViewContent() {
-        
+        nbConnexionLabel.text = viewModel?.count
     }
 
     /*

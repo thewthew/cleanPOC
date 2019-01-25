@@ -13,6 +13,9 @@ internal struct WelcomeViewModel {
     /// Reference to the internal model.
     private let model: WelcomeModel
 
+    var count : String {
+        return "Vous avez ouvert \(model.countNumber!) fois l'app !"
+    }
     /// Initializes the receiver from the given model.
     ///
     /// - Parameter model: The model to reference.
