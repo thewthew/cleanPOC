@@ -12,6 +12,21 @@
 		9D143A7421FB09B6005611D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D143A7221FB09B6005611D8 /* Main.storyboard */; };
 		9D143A7621FB09B8005611D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D143A7521FB09B8005611D8 /* Assets.xcassets */; };
 		9D143A7921FB09B8005611D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D143A7721FB09B8005611D8 /* LaunchScreen.storyboard */; };
+		9D143A9221FB1F5D005611D8 /* WelcomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D143A8D21FB1F5D005611D8 /* WelcomePresenter.swift */; };
+		9D143A9321FB1F5D005611D8 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D143A8E21FB1F5D005611D8 /* WelcomeViewController.swift */; };
+		9D143A9421FB1F5D005611D8 /* WelcomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D143A8F21FB1F5D005611D8 /* WelcomeInteractor.swift */; };
+		9D143A9521FB1F5D005611D8 /* WelcomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D143A9021FB1F5D005611D8 /* WelcomeModel.swift */; };
+		9D143A9621FB1F5D005611D8 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D143A9121FB1F5D005611D8 /* WelcomeViewModel.swift */; };
+		9D143A9C21FB1F74005611D8 /* TimeZoneListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D143A9721FB1F74005611D8 /* TimeZoneListPresenter.swift */; };
+		9D143A9D21FB1F74005611D8 /* TimeZoneListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D143A9821FB1F74005611D8 /* TimeZoneListViewController.swift */; };
+		9D143A9E21FB1F74005611D8 /* TimeZoneListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D143A9921FB1F74005611D8 /* TimeZoneListInteractor.swift */; };
+		9D143A9F21FB1F74005611D8 /* TimeZoneListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D143A9A21FB1F74005611D8 /* TimeZoneListModel.swift */; };
+		9D143AA021FB1F74005611D8 /* TimeZoneListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D143A9B21FB1F74005611D8 /* TimeZoneListViewModel.swift */; };
+		9D143AA721FB235B005611D8 /* DetailZonePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D143AA221FB235B005611D8 /* DetailZonePresenter.swift */; };
+		9D143AA821FB235B005611D8 /* DetailZoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D143AA321FB235B005611D8 /* DetailZoneViewController.swift */; };
+		9D143AA921FB235B005611D8 /* DetailZoneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D143AA421FB235B005611D8 /* DetailZoneInteractor.swift */; };
+		9D143AAA21FB235B005611D8 /* DetailZoneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D143AA521FB235B005611D8 /* DetailZoneModel.swift */; };
+		9D143AAB21FB235B005611D8 /* DetailZoneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D143AA621FB235B005611D8 /* DetailZoneViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +37,21 @@
 		9D143A7521FB09B8005611D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D143A7821FB09B8005611D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D143A7A21FB09B8005611D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D143A8D21FB1F5D005611D8 /* WelcomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePresenter.swift; sourceTree = "<group>"; };
+		9D143A8E21FB1F5D005611D8 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		9D143A8F21FB1F5D005611D8 /* WelcomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeInteractor.swift; sourceTree = "<group>"; };
+		9D143A9021FB1F5D005611D8 /* WelcomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeModel.swift; sourceTree = "<group>"; };
+		9D143A9121FB1F5D005611D8 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
+		9D143A9721FB1F74005611D8 /* TimeZoneListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneListPresenter.swift; sourceTree = "<group>"; };
+		9D143A9821FB1F74005611D8 /* TimeZoneListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneListViewController.swift; sourceTree = "<group>"; };
+		9D143A9921FB1F74005611D8 /* TimeZoneListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneListInteractor.swift; sourceTree = "<group>"; };
+		9D143A9A21FB1F74005611D8 /* TimeZoneListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneListModel.swift; sourceTree = "<group>"; };
+		9D143A9B21FB1F74005611D8 /* TimeZoneListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneListViewModel.swift; sourceTree = "<group>"; };
+		9D143AA221FB235B005611D8 /* DetailZonePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailZonePresenter.swift; sourceTree = "<group>"; };
+		9D143AA321FB235B005611D8 /* DetailZoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailZoneViewController.swift; sourceTree = "<group>"; };
+		9D143AA421FB235B005611D8 /* DetailZoneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailZoneInteractor.swift; sourceTree = "<group>"; };
+		9D143AA521FB235B005611D8 /* DetailZoneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailZoneModel.swift; sourceTree = "<group>"; };
+		9D143AA621FB235B005611D8 /* DetailZoneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailZoneViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +84,9 @@
 		9D143A6D21FB09B6005611D8 /* Clean-tableView */ = {
 			isa = PBXGroup;
 			children = (
+				9D143AA121FB232D005611D8 /* DetailZone */,
+				9D143A8C21FB1F37005611D8 /* TimeZoneList */,
+				9D143A8B21FB1F2B005611D8 /* Welcome */,
 				9D143A6E21FB09B6005611D8 /* AppDelegate.swift */,
 				9D143A7021FB09B6005611D8 /* ViewController.swift */,
 				9D143A7221FB09B6005611D8 /* Main.storyboard */,
@@ -62,6 +95,42 @@
 				9D143A7A21FB09B8005611D8 /* Info.plist */,
 			);
 			path = "Clean-tableView";
+			sourceTree = "<group>";
+		};
+		9D143A8B21FB1F2B005611D8 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				9D143A8D21FB1F5D005611D8 /* WelcomePresenter.swift */,
+				9D143A8E21FB1F5D005611D8 /* WelcomeViewController.swift */,
+				9D143A8F21FB1F5D005611D8 /* WelcomeInteractor.swift */,
+				9D143A9021FB1F5D005611D8 /* WelcomeModel.swift */,
+				9D143A9121FB1F5D005611D8 /* WelcomeViewModel.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		9D143A8C21FB1F37005611D8 /* TimeZoneList */ = {
+			isa = PBXGroup;
+			children = (
+				9D143A9721FB1F74005611D8 /* TimeZoneListPresenter.swift */,
+				9D143A9821FB1F74005611D8 /* TimeZoneListViewController.swift */,
+				9D143A9921FB1F74005611D8 /* TimeZoneListInteractor.swift */,
+				9D143A9A21FB1F74005611D8 /* TimeZoneListModel.swift */,
+				9D143A9B21FB1F74005611D8 /* TimeZoneListViewModel.swift */,
+			);
+			path = TimeZoneList;
+			sourceTree = "<group>";
+		};
+		9D143AA121FB232D005611D8 /* DetailZone */ = {
+			isa = PBXGroup;
+			children = (
+				9D143AA221FB235B005611D8 /* DetailZonePresenter.swift */,
+				9D143AA321FB235B005611D8 /* DetailZoneViewController.swift */,
+				9D143AA421FB235B005611D8 /* DetailZoneInteractor.swift */,
+				9D143AA521FB235B005611D8 /* DetailZoneModel.swift */,
+				9D143AA621FB235B005611D8 /* DetailZoneViewModel.swift */,
+			);
+			path = DetailZone;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +204,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D143AAA21FB235B005611D8 /* DetailZoneModel.swift in Sources */,
+				9D143A9321FB1F5D005611D8 /* WelcomeViewController.swift in Sources */,
+				9D143AA821FB235B005611D8 /* DetailZoneViewController.swift in Sources */,
+				9D143AA021FB1F74005611D8 /* TimeZoneListViewModel.swift in Sources */,
+				9D143A9621FB1F5D005611D8 /* WelcomeViewModel.swift in Sources */,
 				9D143A7121FB09B6005611D8 /* ViewController.swift in Sources */,
+				9D143A9E21FB1F74005611D8 /* TimeZoneListInteractor.swift in Sources */,
+				9D143AAB21FB235B005611D8 /* DetailZoneViewModel.swift in Sources */,
+				9D143A9521FB1F5D005611D8 /* WelcomeModel.swift in Sources */,
+				9D143AA921FB235B005611D8 /* DetailZoneInteractor.swift in Sources */,
 				9D143A6F21FB09B6005611D8 /* AppDelegate.swift in Sources */,
+				9D143A9221FB1F5D005611D8 /* WelcomePresenter.swift in Sources */,
+				9D143A9F21FB1F74005611D8 /* TimeZoneListModel.swift in Sources */,
+				9D143AA721FB235B005611D8 /* DetailZonePresenter.swift in Sources */,
+				9D143A9C21FB1F74005611D8 /* TimeZoneListPresenter.swift in Sources */,
+				9D143A9D21FB1F74005611D8 /* TimeZoneListViewController.swift in Sources */,
+				9D143A9421FB1F5D005611D8 /* WelcomeInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +369,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J859CM2Z5L;
 				INFOPLIST_FILE = "Clean-tableView/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +388,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J859CM2Z5L;
 				INFOPLIST_FILE = "Clean-tableView/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
