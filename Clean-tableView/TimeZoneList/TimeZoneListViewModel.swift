@@ -12,7 +12,27 @@ import Foundation
 internal struct TimeZoneListViewModel {
     /// Reference to the internal model.
     private let model: TimeZoneListModel
-    
+
+    var countryCode : String? {
+        return model.countryMode
+    }
+
+    var countryName : String? {
+        return model.countryName
+    }
+
+    var zoneName : String? {
+        return model.zoneName
+    }
+
+    var gmtOffset : Int? {
+        return model.gmtOffset
+    }
+
+    var timestamp : Int? {
+        return model.timestamp
+    }
+
     /// Initializes the receiver from the given model.
     ///
     /// - Parameter model: The model to reference.

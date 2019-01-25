@@ -27,10 +27,11 @@ final class TimeZoneListViewController: UIViewController {
         timeZoneTableView.delegate = self
         timeZoneTableView.dataSource = self
         interactor = TimeZoneListInteractor(presenter: TimeZoneListPresenter(viewController: self))
+        interactor?.loadContent()
     }
 
     private func updateViewContent() {
-        
+        timeZoneTableView.reloadData()
     }
 
     /*
@@ -42,10 +43,6 @@ final class TimeZoneListViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-    func fetchData(){
-
-    }
 
 }
 
@@ -63,6 +60,7 @@ extension TimeZoneListViewController : UITableViewDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellID", for: indexPath)
         cell.textLabel?.text = "time zone"
+        cell.textLabel?.text = viewModel?.countryName
 
         return cell
     }

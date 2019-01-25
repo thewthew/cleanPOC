@@ -9,5 +9,9 @@
 import Foundation
 
 internal struct TimeZoneListModel {
-    
+    var countryMode : String?
+    var countryName : String?
+    var zoneName : String?
+    var gmtOffset : Int?
+    var timestamp : Int?
 }
