@@ -38,8 +38,14 @@ extension TimeZoneListInteractor: TimeZoneListInteractorInput {
                     do {
                         print("data is loaded")
                         let json = try JSON(data: data)
+                        var listZone = [Zone]()
+
                         if let items = json["zones"].array {
-                            self.model.zonesArray = items
+                            for item in items {
+                                let zone = Zone(countryName: item["countryName"].stringValue, countryCode: item["countryCode"].stringValue, zoneName: item["zoneName"].stringValue, gmtOffset: item["gmtOffset"].intValue, timestamp: item["timestamp"].intValue)
+                                listZone.append(zone)
+                            }
+                            self.model.zonesList = listZone
                         }
                         self.presenter?.modelUpdated(self.model)
 

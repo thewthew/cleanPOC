@@ -64,14 +64,29 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellID" id="d4g-Py-iAt">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellID" rowHeight="123" id="d4g-Py-iAt" customClass="TimeZoneCell" customModule="Clean_tableView" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="123"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d4g-Py-iAt" id="ZwV-RX-7G8">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="122.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDS-2S-eaj">
+                                                    <rect key="frame" x="15" y="51" width="315" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="RDS-2S-eaj" firstAttribute="leading" secondItem="ZwV-RX-7G8" secondAttribute="leadingMargin" id="1rJ-LO-H8S"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="RDS-2S-eaj" secondAttribute="trailing" constant="30" id="HYc-ya-kTn"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="RDS-2S-eaj" secondAttribute="bottom" constant="40" id="hrd-N1-HES"/>
+                                                <constraint firstItem="RDS-2S-eaj" firstAttribute="top" secondItem="ZwV-RX-7G8" secondAttribute="topMargin" constant="40" id="vY5-Za-A68"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="countryNameLabel" destination="RDS-2S-eaj" id="PIm-af-vKR"/>
                                             <segue destination="gcl-lA-LdB" kind="show" id="MQT-lE-Wkn"/>
                                         </connections>
                                     </tableViewCell>

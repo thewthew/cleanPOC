@@ -14,28 +14,8 @@ internal struct TimeZoneListViewModel {
     /// Reference to the internal model.
     private let model: TimeZoneListModel
 
-    var countryCode : String? {
-        return model.countryMode
-    }
-
-    var countryName : String? {
-        return model.zonesArray?[0]["countryName"].stringValue
-    }
-
-    var zoneName : String? {
-        return model.zoneName
-    }
-
-    var gmtOffset : Int? {
-        return model.gmtOffset
-    }
-
-    var timestamp : Int? {
-        return model.timestamp
-    }
-    
-    var zonesArray : [JSON]? {
-        return model.zonesArray
+    var zoneList : [Zone]? {
+        return model.zonesList
     }
 
     /// Initializes the receiver from the given model.

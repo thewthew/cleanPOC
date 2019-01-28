@@ -10,11 +10,13 @@ import Foundation
 import SwiftyJSON
 
 internal struct TimeZoneListModel {
-    var zonesArray : [JSON]?
+    var zonesList : [Zone]?
+}
 
-    var countryMode : String?
-    var countryName : String?
-    var zoneName : String?
-    var gmtOffset : Int?
-    var timestamp : Int?
+struct Zone {
+    var countryName : String
+    var countryCode : String
+    var zoneName : String
+    var gmtOffset : Int
+    var timestamp : Int
 }

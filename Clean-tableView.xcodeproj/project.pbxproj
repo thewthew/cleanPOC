@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B10F2A287AE254F4596A866 /* Pods_Clean_tableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B86F36C12F1F4199A2B280 /* Pods_Clean_tableView.framework */; };
+		9D10F32A21FF4A4A00250E70 /* TimeZoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D10F32921FF4A4A00250E70 /* TimeZoneCell.swift */; };
 		9D143A6F21FB09B6005611D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D143A6E21FB09B6005611D8 /* AppDelegate.swift */; };
 		9D143A7121FB09B6005611D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D143A7021FB09B6005611D8 /* ViewController.swift */; };
 		9D143A7421FB09B6005611D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D143A7221FB09B6005611D8 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		0861B817261F98BEAA33A530 /* Pods-Clean-tableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clean-tableView.release.xcconfig"; path = "Target Support Files/Pods-Clean-tableView/Pods-Clean-tableView.release.xcconfig"; sourceTree = "<group>"; };
 		10B86F36C12F1F4199A2B280 /* Pods_Clean_tableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clean_tableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D10F32921FF4A4A00250E70 /* TimeZoneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneCell.swift; sourceTree = "<group>"; };
 		9D143A6B21FB09B6005611D8 /* Clean-tableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clean-tableView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D143A6E21FB09B6005611D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D143A7021FB09B6005611D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,7 +86,6 @@
 				AB6EE8601FBAE959534A99DF /* Pods-Clean-tableView.debug.xcconfig */,
 				0861B817261F98BEAA33A530 /* Pods-Clean-tableView.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -142,6 +143,7 @@
 				9D143A9921FB1F74005611D8 /* TimeZoneListInteractor.swift */,
 				9D143A9A21FB1F74005611D8 /* TimeZoneListModel.swift */,
 				9D143A9B21FB1F74005611D8 /* TimeZoneListViewModel.swift */,
+				9D10F32921FF4A4A00250E70 /* TimeZoneCell.swift */,
 			);
 			path = TimeZoneList;
 			sourceTree = "<group>";
@@ -290,6 +292,7 @@
 				9D143AA921FB235B005611D8 /* DetailZoneInteractor.swift in Sources */,
 				9D143A6F21FB09B6005611D8 /* AppDelegate.swift in Sources */,
 				9D143A9221FB1F5D005611D8 /* WelcomePresenter.swift in Sources */,
+				9D10F32A21FF4A4A00250E70 /* TimeZoneCell.swift in Sources */,
 				9D143A9F21FB1F74005611D8 /* TimeZoneListModel.swift in Sources */,
 				9D143AA721FB235B005611D8 /* DetailZonePresenter.swift in Sources */,
 				9D143A9C21FB1F74005611D8 /* TimeZoneListPresenter.swift in Sources */,

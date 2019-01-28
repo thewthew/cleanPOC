@@ -54,14 +54,12 @@ extension TimeZoneListViewController: TimeZoneListViewControllerInput {
 
 extension TimeZoneListViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.viewModel?.zonesArray?.count ?? 0
+        return self.viewModel?.zoneList?.count ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellID", for: indexPath)
-        cell.textLabel?.text = viewModel?.zonesArray?[indexPath.row]["countryName"].stringValue
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellID", for: indexPath) as! TimeZoneCell
+        cell.zone = viewModel?.zoneList?[indexPath.row]
         return cell
     }
-
-
 }
