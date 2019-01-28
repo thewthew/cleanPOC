@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 /// `TimeZoneListViewModel` is a struct used by `TimeZoneListViewModelViewController` to display content to the user.
 internal struct TimeZoneListViewModel {
@@ -18,7 +19,7 @@ internal struct TimeZoneListViewModel {
     }
 
     var countryName : String? {
-        return model.countryName
+        return model.zonesArray?[0]["countryName"].stringValue
     }
 
     var zoneName : String? {
@@ -31,6 +32,10 @@ internal struct TimeZoneListViewModel {
 
     var timestamp : Int? {
         return model.timestamp
+    }
+    
+    var zonesArray : [JSON]? {
+        return model.zonesArray
     }
 
     /// Initializes the receiver from the given model.

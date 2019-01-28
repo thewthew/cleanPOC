@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 protocol TimeZoneListInteractorInput: class {
     func loadContent()
@@ -27,6 +28,7 @@ final class TimeZoneListInteractor {
 
 extension TimeZoneListInteractor: TimeZoneListInteractorInput {
     func loadContent() {
+        print("startloading")
         if let url = URL(string: "http://api.timezonedb.com/v2.1/list-time-zone?key=HEG8FEDU4DE3&format=json") {
             let urlRequest = URLRequest(url: url)
 
@@ -34,8 +36,12 @@ extension TimeZoneListInteractor: TimeZoneListInteractorInput {
 
                 if let data = data {
                     do {
-                        let string = String(data: data, encoding: .utf8)
-                        print("string is \(string)")
+                        print("data is loaded")
+                        let json = try JSON(data: data)
+                        if let items = json["zones"].array {
+                            self.model.zonesArray = items
+                        }
+                        self.presenter?.modelUpdated(self.model)
 
                     } catch let error {
                         print(error)
@@ -43,7 +49,5 @@ extension TimeZoneListInteractor: TimeZoneListInteractorInput {
                 }
             }.resume()
         }
-
-        presenter?.modelUpdated(model)
     }
 }

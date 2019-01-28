@@ -7,8 +7,11 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 internal struct TimeZoneListModel {
+    var zonesArray : [JSON]?
+
     var countryMode : String?
     var countryName : String?
     var zoneName : String?
