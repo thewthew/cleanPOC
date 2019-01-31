@@ -13,12 +13,15 @@ protocol DetailZoneViewControllerInput: class {
 }
 
 final class DetailZoneViewController: UIViewController {
-
+    
+    @IBOutlet weak var timeDetailLabel: UILabel!
+    @IBOutlet weak var zoneNameLabel: UILabel!
     @IBOutlet weak var refreshButton: UIButton!
     @IBAction func refreshAction(_ sender: UIButton) {
         print("refresh")
     }
 
+    var zoneName : String?
     var interactor: DetailZoneInteractorInput?
     var viewModel: DetailZoneViewModel? {
         didSet { updateViewContent() }
@@ -29,15 +32,14 @@ final class DetailZoneViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         interactor = DetailZoneInteractor(presenter: DetailZonePresenter(viewController: self))
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        if let zoneName = zoneName {
+            interactor?.loadContent(zonename: zoneName)
+        }
     }
     
     private func updateViewContent() {
-        
+        timeDetailLabel.text = viewModel?.presentTime
+        zoneNameLabel.text = viewModel?.presentZone
     }
 
     /*

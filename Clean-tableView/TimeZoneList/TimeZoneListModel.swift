@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import SwiftyJSON
 
 internal struct TimeZoneListModel {
     var zonesList : [Zone]?
@@ -19,4 +18,11 @@ struct Zone {
     var zoneName : String
     var gmtOffset : Int
     var timestamp : Int
+
+    var abbreviation : String?
+    var dst : String?
+    var zoneStart : String?
+    var zoneEnd : String?
+    var nextAbbreviation : String?
+    var formatted : String?
 }

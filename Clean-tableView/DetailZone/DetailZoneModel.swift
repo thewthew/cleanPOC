@@ -9,5 +9,5 @@
 import Foundation
 
 internal struct DetailZoneModel {
-    
+    var zone : Zone?
 }

@@ -9,7 +9,7 @@
 import Foundation
 
 protocol DetailZoneInteractorInput: class {
-    func loadContent()
+    func loadContent(zonename : String)
 }
 
 final class DetailZoneInteractor {
@@ -17,7 +17,7 @@ final class DetailZoneInteractor {
         didSet { presenter?.modelUpdated(model) }
     }
 
-    var model: DetailZoneModel!
+    var model = DetailZoneModel()
 
     init(presenter: DetailZonePresenterInput?) {
         self.presenter = presenter
@@ -26,7 +26,12 @@ final class DetailZoneInteractor {
 }
 
 extension DetailZoneInteractor: DetailZoneInteractorInput {
-    func loadContent() {
-        
+    func loadContent(zonename : String) {
+        print("startloading detail \(zonename)")
+        APIClient.getZoneDetail("http://api.timezonedb.com/v2.1/get-time-zone?key=HEG8FEDU4DE3&format=json&by=zone&zone=\(zonename)", completion: { [unowned self]  (zone) in
+            self.model.zone = zone
+            self.presenter?.modelUpdated(self.model)
+        })
+        presenter?.modelUpdated(model)
     }
 }

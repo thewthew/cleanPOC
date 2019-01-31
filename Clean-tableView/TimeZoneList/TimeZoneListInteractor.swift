@@ -29,7 +29,7 @@ final class TimeZoneListInteractor {
 extension TimeZoneListInteractor: TimeZoneListInteractorInput {
     func loadContent() {
         print("startloading")
-        APIClient.getZone("http://api.timezonedb.com/v2.1/list-time-zone?key=HEG8FEDU4DE3&format=json", completion: {(zoneList) in
+        APIClient.getZone("http://api.timezonedb.com/v2.1/list-time-zone?key=HEG8FEDU4DE3&format=json", completion: { [unowned self] (zoneList) in
             self.model.zonesList = zoneList
             self.presenter?.modelUpdated(self.model)
         })

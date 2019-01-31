@@ -8,11 +8,11 @@
 
 import Foundation
 import UIKit
-import SwiftyJSON
 
 class TimeZoneCell: UITableViewCell {
 
     @IBOutlet weak var countryNameLabel: UILabel!
+    @IBOutlet weak var gmtLabel: UILabel!
 
     var zone : Zone? {
         didSet {
@@ -21,7 +21,8 @@ class TimeZoneCell: UITableViewCell {
     }
 
     func setup(){
-        let countryName = zone?.countryName
-        countryNameLabel.text = countryName
+        let zoneName = zone?.zoneName
+        countryNameLabel.text = zoneName
+        gmtLabel.text = "\((zone?.countryName)!)"
     }
 }

@@ -43,7 +43,15 @@ final class TimeZoneListViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detailSegue" {
+            let detaiViewController = segue.destination as! DetailZoneViewController
+            if let indexPath = timeZoneTableView.indexPathForSelectedRow{
+                let zoneName = viewModel?.zoneList?[indexPath.row].zoneName
+                detaiViewController.zoneName = zoneName
+            }
+        }
+    }
 }
 
 extension TimeZoneListViewController: TimeZoneListViewControllerInput {
