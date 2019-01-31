@@ -26,8 +26,6 @@ internal struct DetailZoneViewModel {
 
             guard let date = dateFormatter.date(from: formattedString) else { return nil }
 
-//            guard let date2 = dateFormatterPrint.date(from: formattedString) else { return nil }
-
             return "On est le \(date) à \(formattedString)"
         }
         return nil

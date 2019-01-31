@@ -51,7 +51,7 @@ struct APIClient {
                         print(error)
                     }
                 }
-                }.resume()
+            }.resume()
         }
     }
 

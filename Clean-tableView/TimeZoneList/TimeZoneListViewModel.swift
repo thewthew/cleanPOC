@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import SwiftyJSON
 
 /// `TimeZoneListViewModel` is a struct used by `TimeZoneListViewModelViewController` to display content to the user.
 internal struct TimeZoneListViewModel {
