@@ -14,19 +14,20 @@ internal struct DetailZoneViewModel {
     private let model: DetailZoneModel
 
     var presentTime : String? {
-        if let formattedString = model.zone?.formatted {
+        if let timeStampInt = model.zone?.timestamp {
+
+            let date = Date(timeIntervalSince1970: Double(timeStampInt))
 
             let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-            dateFormatter.timeZone = TimeZone(identifier: "UTC")
+            dateFormatter.locale = Locale(identifier: "fr_FR")
+            dateFormatter.dateStyle = .medium
+            let dateString = dateFormatter.string(from: date)
 
-            let dateFormatterPrint = DateFormatter()
-            dateFormatterPrint.dateFormat = "EEEE, MMM d, yyyy"
-            dateFormatterPrint.timeZone = TimeZone(identifier: "UTC")
+            let dateFormatter2 = DateFormatter()
+            dateFormatter2.dateFormat = "HH:mm:ss"
+            let timeString = dateFormatter2.string(from: date)
 
-            guard let date = dateFormatter.date(from: formattedString) else { return nil }
-
-            return "On est le \(date) à \(formattedString)"
+            return "On est le \(dateString) à \(timeString) "
         }
         return nil
     }
