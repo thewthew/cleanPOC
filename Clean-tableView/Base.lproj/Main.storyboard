@@ -121,10 +121,10 @@
             </objects>
             <point key="canvasLocation" x="2192.8000000000002" y="-421.43928035982015"/>
         </scene>
-        <!--Detail Zone View Controller-->
+        <!--New Template Detail Zone View Controller-->
         <scene sceneID="Vb5-sw-IWD">
             <objects>
-                <viewController id="gcl-lA-LdB" customClass="DetailZoneViewController" customModule="Clean_tableView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gcl-lA-LdB" customClass="NewTemplateDetailZoneViewController" customModule="Clean_tableView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NVT-rj-D8b">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

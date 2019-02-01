@@ -45,7 +45,7 @@ final class TimeZoneListViewController: UIViewController {
     */
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "detailSegue" {
-            let detaiViewController = segue.destination as! DetailZoneViewController
+            let detaiViewController = segue.destination as! NewTemplateDetailZoneViewController
             if let indexPath = timeZoneTableView.indexPathForSelectedRow{
                 let zoneName = viewModel?.zoneList?[indexPath.row].zoneName
                 detaiViewController.zoneName = zoneName

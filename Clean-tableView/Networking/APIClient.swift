@@ -42,8 +42,6 @@ struct APIClient {
                 if let data = data {
                     do {
                         print("data detail is loaded")
-                        let stringData = String(data: data, encoding: .utf8)
-                        print("getZoneDetail is \(stringData!)")
                         let json = try JSON(data: data)
                         completion(parsingDetailZoneJSON(json))
 
