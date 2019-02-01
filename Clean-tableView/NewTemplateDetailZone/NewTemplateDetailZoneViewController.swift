@@ -12,14 +12,13 @@ protocol NewTemplateDetailZoneViewControllerInput: class {
     func viewModelUpdated(_ viewModel: NewTemplateDetailZoneViewModel)
 }
 
-final class NewTemplateDetailZoneViewController: UIViewController
-{
+final class NewTemplateDetailZoneViewController: UIViewController {
 
     @IBOutlet weak var timeDetailLabel: UILabel!
     @IBOutlet weak var zoneNameLabel: UILabel!
     @IBOutlet weak var refreshButton: UIButton!
     @IBAction func refreshAction(_ sender: UIButton) {
-        print("refresh new temp")
+        loadContent()
     }
 
     var zoneName : String?
@@ -31,9 +30,7 @@ final class NewTemplateDetailZoneViewController: UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         interactor = NewTemplateDetailZoneInteractor(presenter: NewTemplateDetailZonePresenter(viewController: self))
-        if let zoneName = zoneName {
-            interactor?.loadContent(zonename: zoneName)
-        }
+        loadContent()
     }
     
     private func updateViewContent() {
@@ -43,6 +40,11 @@ final class NewTemplateDetailZoneViewController: UIViewController
         }
     }
 
+    fileprivate func loadContent() {
+        if let zoneName = zoneName {
+            interactor?.loadContent(zonename: zoneName)
+        }
+    }
 }
 
 extension NewTemplateDetailZoneViewController: NewTemplateDetailZoneViewControllerInput {

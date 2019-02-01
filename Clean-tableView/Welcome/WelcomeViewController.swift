@@ -16,6 +16,23 @@ final class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var nbConnexionLabel: UILabel!
+    @IBAction func languageControl(_ sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+        case 0:
+            print("fr")
+
+        case 1:
+            print("en")
+
+        case 2:
+            print("rs")
+
+        default:
+            break
+        }
+    }
+
+
     var interactor: WelcomeInteractorInput?
     var viewModel: WelcomeViewModel? {
         didSet { updateViewContent() }
